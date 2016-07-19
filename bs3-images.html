@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Images</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Bootstrap Reference - Images</h1>
+            </div>
+            
+            <div class="page-header">
+                <h2>Image Styles</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Rounded Image</h3>
+                    <p>The <code>.img-rounded</code> class adds rounded corners to an image (IE8 does not support rounded corners):</p>
+                    <img src="img/earth.jpg" class="img-rounded" alt="Earth" width="240" height="240">
+                </div>
+                <div class="col-md-4">
+                    <h3>Circle Image</h3>
+                    <p>The <code>.img-circle</code> class shapes the image to a circle (IE8 does not support rounded corners):</p>
+                    <img src="img/earth.jpg" class="img-circle" alt="Earth" width="240" height="240">
+                </div>
+                <div class="col-md-4">
+                    <h3>Thumbnail Image</h3>
+                    <p>The <code>.img-thumbnail</code> class shapes the image to a thumbnail:</p>
+                    <img src="img/earth.jpg" class="img-thumbnail" alt="Earth" width="240" height="240">
+                </div>
+            </div>
+            
+            <div class="page-header">
+                <h2>Responsive Styles</h2>
+            </div>
+            
+            <h3>Responsive Image</h3>
+            <p>The <code>.img-responsive</code> class scales the image to the parent element and applies <code>display: block;</code> and <code>max-width: 100%;</code> and <code>height: auto;</code> to the image:</p>
+            
+            <img src="img/bigearth.jpg" class="img-responsive" alt="Earth">
+
+            <h3>Responsive Embed</h3>
+            <p>The <code>.embed-responsive</code> class is applied to a container to create a responsive video that will scale to the parent element.</p>
+            <p>The containing <code>&lt;div&gt;</code> defines the aspect ratio of the video and lets videos or slideshows scale properly on any device. Classes can be applied directly to <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;video&gt;</code>, and <code>&lt;object&gt;</code> elements.</p>
+            <p>The <code>.embed-responsive-item</code> class is applied to the <code>&lt;iframe&gt;</code></p>
+            <p>There are two aspect ratio classes that can be applied to the responsive video: <code>.embed-responsive-16by9</code> and <code>.embed-responsive-4by3</code></p>
+            
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FG0fTKAqZ5g"></iframe>
+            </div>       
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>

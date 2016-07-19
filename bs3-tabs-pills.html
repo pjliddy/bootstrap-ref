@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Tabs &amp; Pills</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Bootstrap Reference - Tabs &amp; Pills</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Tabs &amp; Pills</h2>
+            </div>
+ 
+            <h3>Inline Menu</h3>
+            <p>A menu is  defined in <code>&lt;ul&gt;</code> element. Adding the <code>.list-inline</code>class to the unordered list dislays a the list as a horizontal menu.</p>
+      
+            <ul class="list-inline">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Tabs</h3>
+                    <p>Tabs are created by adding the <code>.nav</code> and <code>.nav-tabs</code> classes to an unordered list.</p>
+                    <p>The selected tab can be indicated by applying the <code>.active</code> class to one of the <code>&lt;li&gt;</code> elements in the tab set.</p>
+
+                    <ul class="nav nav-tabs">
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Tabs with Dropdown Menus</h3>
+                    <p>Individual tabs can contain dropdown menus.</p>
+                    <p>The <code>.dropdown</code> class is added to the <code>&lt;li&gt;</code> element that represents the tab with the dropdown.</p>
+                    <p>A button or anchor is added inside the <code>.dropdown</code> element, along with a <code>&lt;ul&gt;</code> containing the menu items. (see <a href="#">Dropdown Class</a> for reference.)</p>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">First Menu Item</a></li>
+                                <li><a href="#">Second Menu Item</a></li>
+                                <li><a href="#">Third Menu Item</a></li> 
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                </div>
+                
+                <div class="clearfix visible-s"></div>
+                
+                <div class="col-sm-6">
+                    <h3>Pills</h3>
+                    <p>Pills are menu links with shapes around them.</p>
+                    <p>Pills are created by adding the <code>.nav</code> and <code>.nav-pills</code> classes to an unordered list.</p>
+                    <p>The selected pill can be indicated by applying the <code>.active</code> class to one of the <code>&lt;li&gt;</code> elements in the pill set.</p>
+
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Vertical Pills</h3>
+                    <p>Pills can be displayed vertically by applying the <code>.nav-stacked</code> class.</p>
+
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                </div>    
+                
+                <div class="clearfix visible-s"></div>
+                <div class="col-sm-12">
+                    <h3>Vertical Pills Inline Layout</h3>
+                    <p>A vertical pill menu placed in the last column will be displayed to the right, but on a small screen, the content will automatically adjust itself into a single-column layout.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Menu 1</a></li>
+                                <li><a href="#">Menu 2</a></li>
+                                <li><a href="#">Menu 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix visible-lg"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <h3>Vertical Pill with a Dropdown Menu</h3>
+                    <p>Individual pills can contain dropdown menus.</p>
+                    <p>The <code>.dropdown</code> class is added to the <code>&lt;li&gt;</code> element that represents the pill with the dropdown.</p>
+                    <p>A button or anchor is added inside the <code>.dropdown</code> element, along with a <code>&lt;ul&gt;</code> element containing the menu items. (see <a href="#">Dropdown Class</a> for reference.)</p>
+                    
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Menu 1<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">First Menu Item</a></li>
+                                <li><a href="#">Second Menu Item</a></li>
+                                <li><a href="#">Third Menu Item</a></li> 
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-12">
+                    <h3>Justified Tabs and Pills</h3>
+                    <p>Adding the <code>.nav-justified</code>class to the <code>.nav-tabs</code> or <code>.nav-pills</code> class creates a set of tabs or pills that are centered and justified across the screen.</p>
+                    <p>List items will be stacked and centered at smaller resolutions below 768 pixels.</p>
+                    
+                    <h4>Justifed Tabs</h4>
+                    
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                    
+                    <h4>Justifed Pills</h4>
+                    
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-12">
+                    <h3>Toggleable / Dynamic Tabs</h3>
+                    <p>To make the tabs toggleable, add the <code>data-toggle="tab"</code> attribute to the <code>&lt;a&gt;</code> element in each <code>&lt;li&gt;</code> in the tab set.</p>
+                    <p>Apply the <code>.tab-content</code>class to a wrapper <code>&lt;div&gt;</code> containing a series of elements with the <code>.tab-pane</code> class.</p>
+                    <p>Each <code>.tab-pane</code> should have a unique ID.</p>
+                    <p>Adding the <code>.fade</code> class to a <code>.tab-pane</code> makes the tab content fade in and out when a tab is selected.</p>
+                    
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <h4>Home Content Title</h4>
+                            <p>Home content goes here.</p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h4>Menu 1</h4>
+                            <p>Some content in menu 1 goes here.</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <h4>Menu 2</h4>
+                            <p>Some content in menu 2 goes here.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12">
+                    <h3>Toggleable / Dynamic Pills</h3>
+                    <p>To make the pills toggleable, use the same method as for toggleable / dynamic tabs, but add the <code>data-toggle="pill"</code> attribute to the <code>&lt;a&gt;</code> element in each <code>&lt;li&gt;</code> in the pill set instead of <code>data-toggle="tab"</code>.</p>
+                    
+                    <ul class="nav nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#home_pill">Home</a></li>
+                        <li><a data-toggle="tab" href="#menu1_pill">Menu 1</a></li>
+                        <li><a data-toggle="tab" href="#menu2_pill">Menu 2</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home_pill" class="tab-pane fade in active">
+                            <h4>Home Content Title</h4>
+                            <p>Home content goes here.</p>
+                        </div>
+                        <div id="menu1_pill" class="tab-pane fade">
+                            <h4>Menu 1</h4>
+                            <p>Some content in menu 1 goes here.</p>
+                        </div>
+                        <div id="menu2_pill" class="tab-pane fade">
+                            <h4>Menu 2</h4>
+                            <p>Some content in menu 2 goes here.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h2>Bootstrap JS Tab</h2>
+                    </div>
+
+                    <h3>JS Tab Methods</h3>
+                    <p>Tabs can be controlled manually with a JavaScript calls to:<code>.tab("show")</code> from a tab or pill</p>
+                    
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#home_js">Home</a></li>
+                        <li><a href="#menu1_js">Menu 1</a></li>
+                        <li><a href="#menu2_js">Menu 2</a></li>
+                        <li><a href="#menu3_js">Menu 3</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home_js" class="tab-pane fade in active">
+                            <h4>Home Content Title</h4>
+                            <p>Home content goes here.</p>
+                        </div>
+                        <div id="menu1_js" class="tab-pane fade">
+                            <h4>Menu 1 Title</h4>
+                            <p>Some content in menu 1 goes here.</p>
+                        </div>
+                        <div id="menu2_js" class="tab-pane fade">
+                            <h4>Menu 2 Title</h4>
+                            <p>Some content in menu 2 goes here.</p>
+                        </div>
+                        <div id="menu3_js" class="tab-pane fade">
+                            <h4>Menu 3 Title</h4>
+                            <p>Some content in menu 3 goes here.</p>
+                        </div>
+                    </div>
+ 
+                    <h3>JS Tab Events</h3>
+                    <p>The <code>show.bs.tab</code> event is triggered when the tab is about to be shown.</p>
+                    <p>The <code>shown.bs.tab</code> event is triggered when the tab is fully shown (after CSS transitions have completed).</p>
+                    <p>The <code>hide.bs.tab</code> event is triggered when the tab is about to be hidden.</p>
+                    <p>The <code>hidden.bs.tab</code> event is triggered when the tab is fully hidden (after CSS transitions have completed).</p>
+                </div>
+            </div>
+        </div>                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+            // This script selects the current .nav-tab and shows the appropriate .tab-content
+            $(document).ready(function(){
+                $(".nav-tabs a").click(function(){
+                    $(this).tab('show');
+                });
+            });
+        </script>
+    </body>
+</html>
