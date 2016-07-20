@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Navigation Bar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="nav.html"></div> 
+            <div w3-include-html="nav.html"></div> 
+            <div class="page-header">
+                <h1>Bootstrap Reference - Navigation Bar</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Navigation Bar</h2>
+                <p>Needs breakdown of <code>.navbar</code>, <code>.navbar-header</code>, <code>.navbar-brand</code>, and <code>.navbar-nav</code></p>
+            </div>
+ 
+            <h3>Basic Navigation Bar</h3>
+            <p>A standard navigation bar is created using the <code>&lt;nav&gt;</code> element with the <code>.navbar</code> and <code>.navbar-default</code> classes.</p>
+            <p>The navigation bar can adjust its layout from horizontal to vertical, based on screen size.</p>
+            
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">LOGO</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li> 
+                        <li><a href="#">Item 3</a></li> 
+                    </ul>
+                </div>
+            </nav>
+            
+            <h3>Inverted Navigation Bar</h3>
+            <p>An alternate black style can be used on the navbar by using the <code>.navbar-default</code> class instead of <code>.navbar-default</code>.</p>
+            
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">LOGO</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li> 
+                        <li><a href="#">Item 3</a></li> 
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="page-header">
+                <h2>Fixed Navigation Bars</h2>
+            </div>
+
+            <h3>Top Fixed Navigation Bar</h3>
+            <p>Adding the <code>.navbar-fixed-top</code> class to a navbar will fix the navbar to the top of the page.</p>
+            <p>Page content will scroll behind the navbar.</p>
+            <a href="ex-navbar-top.html">See an example of Fixed Navigation Bars</a>
+            
+            <h3>Bottom Fixed Navigation Bar</h3>
+            <p>Adding the <code>.navbar-fixed-bottom</code> class to a navbar will fix the navbar to the top of the page.</p>
+            <p>Page content will scroll behind the navbar.</p>
+            <a href="ex-navbar-top.html">See an example of Fixed Navigation Bars</a>
+            
+            <div class="page-header">
+                <h2>Customized Navigation Bars</h2>
+            </div>
+            
+            <h3>Right-Aligned Navigation</h3>
+            <p>The <code>.navbar-right</code> class is used to right-align <code>.navbar</code> elements.</p>
+            <p>Separate <code>.navbar</code> elements are used for the left and right nav containers inside a <code>&lt;nav&gt;</code>
+                
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">LOGO</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li> 
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <h3>NavBar with a Dropdown</h3>
+
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">LOGO</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Item 1<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li> 
+                            </ul>
+                        </li>
+                        <li><a href="#">Item 2</a></li> 
+                        <li><a href="#">Item 3</a></li> 
+                    </ul>
+                </div>
+            </nav>
+            
+            <h3>Responsive Navigation</h3>
+            <p>Use <code>.navbar-toggle</code> and <code>.navbar-collapse</code></p>
+            
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <!--
+                        A button with the .navbar-toggle class is added to the .navbar-header div
+                        data-toggle="collapse" sends an event message to the .navbar-collapse element
+                        data-target="#myNavbar" indicates the id of the navbar to collapse
+                    -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">LOGO</a>
+                    </div>
+                    <!--
+                        The .collapse and .navbar-collapse classes are added to the container wrapping the .nav element
+                    -->
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Item 1 <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    
+                    
+                </div>
+                <div class="col-sm-6">
+                    
+                    
+                </div>
+            </div>
+         </div>         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+       <script>w3IncludeHTML();</script>
+    </body>
+</html>

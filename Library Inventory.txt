@@ -214,5 +214,16 @@ TABS & PILLS
 		Events
 		{jQuery}
 	
+NAVIGATION
+    Navigation Bars
+        Basic Navigation Bar
+        Inverted Navigation Bar
+    Fixed Navigation Bars
+        Top Fixed Navigation Bar
+        Bottom Fixed Navigation Bar
+    Customized Navigation Bar
+        Right-Aligned Navigation
+        NavBar with a Dropdown
+        Responsive Navigation
 
 
