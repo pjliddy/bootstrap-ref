@@ -1,3 +1,9 @@
+In terminal, navigate to project folder and type:
+
+python -m SimpleHTTPServer 8000
+
+then view 0.0.0.0:8000 in the browser (to run local html includes in Javascript)
+
 ALERTS
 	Basic Alerts
 		Alert Class
