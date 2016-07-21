@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="container">
-            <div w3-include-html="nav.html"></div> 
+            <div w3-include-html="nav.html"></div>
             <div class="page-header">
                 <h1>Bootstrap Reference - Alerts</h1>
             </div>
@@ -75,14 +75,14 @@
             <h3>Close Alerts Via JavaScript</h3>
             <p>Close manually with a JavaScript call to <code>.alert("close")</code>from a link or a button element to close the alert message:</p>
             <p>The <code>close.bs.alert</code> event is triggered when the alert message is about to be closed.</p>
-            <p>The <code>closed.bs.alert</code> event is triggered when the alert message has been closed.</p>           
+            <p>The <code>closed.bs.alert</code> event is triggered when the alert message has been closed.</p>
             
             <div class="alert alert-danger" id="myAlert">
                 <a href="#" class="close" data-dismiss="alert">&times;</a>
                 <strong>Close Me!</strong> Clicking on the &times; uses <code>.alert('close')</code> to close the alert.
             </div>
 
-        </div>         
+        </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -103,7 +103,7 @@
                $("#myAlert").on('closed.bs.alert', function(){
                     alert('The alert message is now closed.');
                 });
-            });  
+            });
         </script>
     </body>
 </html>

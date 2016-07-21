@@ -1,0 +1,15 @@
+{
+    "name": "max-read",
+    "title": "MaxRead",
+    "description": "This theme is designed to maximize readability!",
+    "homepage": "https://github.com/pjliddy/boostrap-ref",
+    "version": "1.0.0",
+    "author": "Patrick Liddy <pjliddy@gmail.com>",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}
