@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Forms</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Forms</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Default Form Settings</h2>
+            </div>
+
+            <h3>Form Layouts</h3>
+            <p>Bootstrap provides three types of form layouts: vertical (default), horizontal, or inline.</p>
+            <p>Wrap labels and form controls in  <code>&lt;div class="form-group"&gt;</code>; for correct spacing</p>
+            <p>Add the <code>.form-control</code> class to all textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements</p><p>All <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with the<code>.form-control</code> class have a width of 100%.</p>
+            <p>Always use the correct ARIA role: <code>&lt;form role="form"&gt;</code></p>
+
+            <h3>Vertical Form</h3>
+            <p>A vertical form is created by the standard <code>&lt;form&gt;</code> element.</p>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <h3>Horizontal Form</h3>
+            <p>A horizontal form is created by applying the using the <code>.form-horizontal</code> class to a standard <code>&lt;form&gt;</code> element.</p>
+            <p>The <code>.control-label</code> class should be applied to all <code>&lt;label&gt;</code> elements to ensure proper positioning next to their corresponding <code>input</code> element.</p>
+            <p>This horizontal form layout uses a two and ten column layout with the <code>col-sm-offset-2</code> class applied to the checkbox and button to shift their layout to the right.</p>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email address:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pwd" class="col-sm-2 control-label">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <h3>Inline Form</h3>
+            <p>An inline form is created by adding the <code>.form-inline</code> class to the <code>&lt;form&gt;</code> element.</p>
+            <p>All of the elements of an inline form are inline, left-aligned (only on viewports greater than 768 pixels).
+
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+            <div class="row">
+                <div class="col-sm-6">
+
+
+                </div>
+                <div class="col-sm-6">
+
+
+                </div>
+            </div>
+         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Fixed &amp; Grid Layouts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Grid Layouts</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Fixed &amp; Fluid Layouts</h2>
+            </div>
+
+            <h3>Fixed Layout</h3>
+            <p>The basic grid system inside a <code>.container</code> div starts out stacked on extra small devices (phones)), switching to horizontal on medium/large devices.</p>
+
+            <p>Below is a basic "stacked-to-horizontal" two-column layout. It lays out content in two equal columns on all screens, except for small screens, where it will automatically stack as a single column, full-width layout:</p>
+
+            <p>The parent container sets its width according to the breakpoints defined by Bootstrap: 750px, 970px, and 1170px. Column width is a set proportion of this container width.</p>
+
+            <div class="row">
+                <div class="col-sm-6 table-bordered text-center">
+                    First Column<br>
+                        .col-sm-6
+                </div>
+                <div class="col-sm-6 table-bordered text-center">
+                    Second Column<br>
+                        .col-sm-6
+                </div>
+            </div>
+
+            <h3>Fluid Layout</h3>
+            <p>Using the <code>.container-fluid</code> class for a parent div makes that container a full-width layout.</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 table-bordered text-center">
+                    First Column<br>
+                        .col-sm-3
+                </div>
+                <div class="col-sm-6 table-bordered text-center">
+                    Second Column<br>
+                        .col-sm-6
+                </div>
+                <div class="col-sm-3 table-bordered text-center">
+                    Third Column<br>
+                        .col-sm-3
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+             <div class="page-header">
+                <h2>Layout Size Classes</h2>
+            </div>
+
+           <h3>Using Size Classes</h3>
+            <p>In the grid below, the two columns are set to one-third and two-thirds of the container width on medium displays and higher using the <code>.col-md-4</code> and <code>.col-md-8</code> classes.</p>
+            <p>For small displays (&gt;= 768), the layout switches to two equal width columns using the <code>.col-md-8</code> class.</p>
+            <p>On extra small displays (&lt; 768), the layout switches to a single, stacked column by default.</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 table-bordered text-center">
+                    First Column<br>
+                        .col-sm-6 | .col-md-4
+                </div>
+                <div class="col-sm-6 col-md-8 table-bordered text-center">
+                    Second Column<br>
+                        .col-sm-6 | .col-md-8
+                </div>
+            </div>
+
+            <h3>Default Small Screen Layouts</h3>
+            <p>If no <code>.col-sm-*</code> classes are used to specify layout behavior at smaller screen sizes, the layout will default to a single, stacked column below the lowest specified breakpoint (&lt;= 992 px).</p>
+            <p>In the grid below, the two columns use the <code>.col-md-6</code> class to define a layout with two equal columns on medium and large screen sizes. On small (tablet) and extra small (mobile) devices, the layout is a single column.</p>
+            <p>If <code>.col-lg-*</code> classes are the only ones used, the layout will default to single, stacked column below a screen width of 1200 px.</p>
+
+            <div class="row">
+                <div class="col-md-6 table-bordered text-center">
+                    First Column<br>
+                        .col-md-6
+                </div>
+                <div class=" col-md-6 table-bordered text-center">
+                    Second Column<br>
+                        col-md-6
+                </div>
+            </div>
+
+            <h3>Large Screen Layouts</h3>
+            <p>Large devices have a screen width of 1200 px or above. Different layout size classes can be applied for each screen size.</p>
+            <p>In the example below, the proportion of column widths changes with each defined breakpoint.</p>
+
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-4 table-bordered text-center">
+                    First Column<br>
+                        .col-sm-8 | .col-md-6 | .col-lg-4
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-8 table-bordered text-center">
+                    Second Column<br>
+                        .col-sm-4 | .col-md-6 | .col-lg-8
+                </div>
+            </div>
+
+             <div class="page-header">
+                <h2>Layout Tools</h2>
+            </div>
+
+            <h3>Clear Floats</h3>
+            <p>If content in columns will be of unequal height and produce uneven wrapping, add the <code>.clearfix</code> and <code>.visible-<em>size</em></code> classes to a <code>&lt;div&gt;</code> after the correct number of columns for a row.</p>
+            <p>The <code>.visible-<em>size</em></code> class should only be applied for the required viewport</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3 table-bordered text-center">
+                    Column 1<br>
+                    This column has significantly more content than the other columns.
+                </div>
+                <div class="col-sm-6 col-md-3 table-bordered text-center">Column 2</div>
+                <!-- Add clearfix for only the required viewport -->
+                <div class="clearfix visible-sm"></div>
+                <div class="col-sm-6 col-md-3 table-bordered text-center">
+                    Column 3<br>
+                    Adding <code>&lt;div class="clearfix visible-sm"&gt;&lt;/div&gt;</code> forces the row to wrap cleanly as the screen gets smaller.
+                </div>
+                <div class="col-sm-6 col-md-3 table-bordered text-center">Column 4</div>
+                  <!-- Add clearfix for only the required viewport -->
+                <div class="clearfix visible-sm"></div>
+            </div>
+
+            <h3>Nested Columns</h3>
+            <p>This example shows a two column layout for tablets and greater, with two nested columns in the first column.</p>
+            <p>The nested columns are created by adding an additional row within the existing Column One div.</p>
+            <p>On smaller devices, the main columns and the nested columns will stack.</p>
+            <div class="row">
+                <div class="col-sm-8 table-bordered text-center">
+                    Column One<br>
+                        .col-sm-8
+                    <div class="row">
+                        <div class="col-sm-6 table-bordered text-center"><p>Nested Column One A<br>.col-sm-6</div>
+                        <div class="col-sm-6 table-bordered text-center"><p>Nested Column One B<br>.col-sm-6</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 table-bordered text-center"><p>Column Two<br>.col-sm-4</p></div>
+            </div>
+
+            <h3>Offset Columns</h3>
+            <p>Columns can be shifted a specifcied number of columns to the right using <code>.col-md-offset-*</code> classes.</p>
+            <p>These classes increase the left margin of a column by * columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.</p>
+            <p>Offsets from smaller grid classes can be overridded with the <code>.col-*-offset-0</code> classes.</p>
+
+            <div class="row">
+                <div class="col-md-3 table-bordered text-center">Row A Column 1<br>.col-md-3</div>
+                <div class="col-md-3 col-md-offset-6 table-bordered text-center">Row A Column 2<br>.col-md-3 + .col-md-offset-6</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3 table-bordered text-center">Row B Column 1<br>.col-md-3 + .col-md-offset-3</div>
+                <div class="col-md-3 table-bordered text-center">Row B Column 2<br>.col-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 table-bordered text-center">Row C Column 1<br>.col-md-6 .col-md-offset-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 table-bordered text-center">Row D Column 1<br>.col-md-3 + .col-md-offset-1</div>
+                <div class="col-md-3 col-md-offset-4 table-bordered text-center">Row D Column 2<br>.col-md-3 + .col-md-offset-4</div>
+            </div>
+
+            <h3>Push and Pull</h3>
+            <p>Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes:.</p>
+
+            <div class="row">
+                <div class="col-sm-4 col-sm-push-8 table-bordered text-center">
+                    First Column: Pushed<br>
+                        .col-sm-4 + .col-sm-push-8
+                </div>
+                <div class="col-sm-8 col-sm-pull-4 table-bordered text-center">
+                    Second Column: Pulled<br>
+                        .col-sm-8 + .col-sm-pull-4
+                </div>
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+    </body>
+</html>

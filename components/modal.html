@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Modal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Modal</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Modals</h2>
+            </div>
+
+            <h3>Basic Modal</h3>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Open Modal</button>
+
+            <!-- Modal -->
+            <div id="modal1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body copy.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Modal Sizes</h3>
+
+            <h4>Small Modal</h4>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Open Modal</button>
+
+            <!-- Modal -->
+            <div id="modal2" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-sm">
+
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body copy.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Large Modal</h4>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Open Modal</button>
+
+            <!-- Modal -->
+            <div id="modal3" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body copy.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-header">
+                <h2>Bootstrap Modal JS</h2>
+            </div>
+
+            <h3>Methods</h3>
+
+            <h3>Events</h3>
+
+         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+    </body>
+</html>

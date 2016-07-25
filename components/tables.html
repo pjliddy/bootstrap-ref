@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Tables</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Tables</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Table Styles</h2>
+            </div>
+
+            <h3>Basic Table Style</h3>
+            <p>The <code>.table</code> class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Bordered Table Style</h3>
+            <p>The <code>.table-bordered</code> class adds borders to the table an cells:</p>
+
+            <table class="table table-bordered">
+                 <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Striped Table Style</h3>
+            <p>The <code>.table-striped</code> class adds alternating colored rows to a table:</p>
+
+            <table class="table table-striped">
+                 <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Hover Row Style</h3>
+            <p>The <code>.table-hover</code> class enables a hover state on table rows:</p>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Condensed Table Style</h3>
+            <p>The <code>.table-condensed</code> class makes a table more compact by cutting cell padding in half:</p>
+
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Contextual Classes</h3>
+            <p>Contextual classes can be used to color header rows, table rows, or table cells. The classes that can be used are: <code>.active</code>, <code>.success</code>, <code>.info</code>, <code>.warning</code>, and <code>.danger</code>.</p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr class="info">
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Responsive Table Style</h3>
+            <p>Applying the <code>.table-responsive</code> class to the div containing a table creates a responsive table. The table will then scroll horizontally on small devices (under 768px).</p>
+            <p>When viewing on anything larger than 768px wide, there is no difference:</p>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th>Gender</th>
+                        <th>Occupation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>john@example.com</td>
+                        <td>Boston</td>
+                        <td>Male</td>
+                        <td>Accountant</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Johnson</td>
+                        <td>mary@example.com</td>
+                        <td>Indianapolis</td>
+                        <td>Female</td>
+                        <td>Statistician</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Clark</td>
+                        <td>bill@example.com</td>
+                        <td>Philadelphia</td>
+                        <td>Male</td>
+                        <td>Marketing Manager</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+    </body>
+</html>

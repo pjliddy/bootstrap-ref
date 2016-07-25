@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Form Inputs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Form Inputs</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Form Inputs</h2>
+            </div>
+
+            <h3>Input</h3>
+            <p>Bootstrap supports the HTML5 input types:</p>
+            <row>
+                <div class="col-xs-6">
+                    <ul>
+                        <li>text</li>
+                        <li>password</li>
+                        <li>date</li>
+                        <li>datetime</li>
+                        <li>datetime-local</li>
+                        <li>month</li>
+                        <li>time</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul>
+                        <li>week</li>
+                        <li>number</li>
+                        <li>email</li>
+                        <li>url</li>
+                        <li>search</li>
+                        <li>tel</li>
+                        <li>color</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </row>
+
+            <p>Inputs won't be properly styled if their type is not declared.</p>
+
+            <row>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="datetime">Datetime:</label>
+                        <input type="datetime" class="form-control" id="datetime">
+                    </div>
+                    <div class="form-group">
+                        <label for="dtl">Datetime Local:</label>
+                        <input type="datetime-local" class="form-control" id="dtl">
+                    </div>
+                    <div class="form-group">
+                        <label for="month">Month:</label>
+                        <input type="month" class="form-control" id="month">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label for="week">Week:</label>
+                        <input type="week" class="form-control" id="week">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number:</label>
+                        <input type="number" class="form-control" id="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="url">URL:</label>
+                        <input type="url" class="form-control" id="url">
+                    </div>
+                    <div class="form-group">
+                        <label for="search">Search:</label>
+                        <input type="search" class="form-control" id="search">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Tel:</label>
+                        <input type="tel" class="form-control" id="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color:</label>
+                        <input type="color" class="form-control" id="color">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </row>
+
+            <h3>Text Area</h3>
+            <p>Standard text area.</p>
+
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+
+            <h3>Checkbox</h3>
+            <p>The last checkbox is disabled.</p>
+
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Option 1</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Option 2</label>
+            </div>
+            <div class="checkbox disabled">
+                <label><input type="checkbox" value="" disabled>Option 3</label>
+            </div>
+
+            <h3>Radio Button</h3>
+            <p>The last radio button is disabled.</p>
+
+            <div class="radio">
+                <label class="radio"><input type="radio" name="optradio">Option 1</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio disabled">
+                <label><input type="radio" name="optradio" disabled>Option 3</label>
+            </div>
+
+            <h3>Inline Radio Buttons</h3>
+            <p>Apply the <code>.radio-inline</code> class to the <code>label</code> class to create a horizontal layout.</p>
+
+            <label class="radio-inline"><input type="radio" name="inradio">Option 1</label>
+            <label class="radio-inline"><input type="radio" name="inradio">Option 2</label>
+            <label class="radio-inline"><input type="radio" name="inradio">Option 3</label>
+
+            <h3>Bootstrap Select List (Select Single)</h3>
+            <p>TEXT</p>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="sel1">Select list (select one):</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </form>
+
+            <h3>Bootstrap Select Dropdown (Select Multiple)</h3>
+            <p>Text</p>
+            <form role="form">
+                <div class="form-group">
+                    <label for="sel2">Mutiple select list (Shift-click or Comamnd-click):</label>
+                    <select multiple class="form-control" id="sel2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </form>
+
+            <h3>Static Controls</h3>
+            <p>Insert a plain text value next to a form label in a horizontal form by using the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code> element</p>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static">someone@example.com</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static">******</p>
+                    </div>
+                </div>
+            </form>
+
+            <h3>Help Text</h3>
+            <p>To add block level help text to forms, add the <code>.help-block</code> class to a <code>span</code> containing help text.</p>
+
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                <span class="help-block">This is some help text...</span>
+            </div>
+
+            <div class="page-header">
+                <h2>Form Control States</h2>
+            </div>
+
+            <h3>Input Focus</h3>
+            <p>When the input comes into focus (when user clicks on it), the outline of the input is replaced with a box-shadow.</p>
+
+            <div class="form-group">
+                <label>Focused</label>
+                <input class="form-control" id="focusedInput" type="text" value="Click to focus...">
+            </div>
+
+            <h3>Disabled Input</h3>
+            <p>To disable an input, add the <code>disabled</code> attribute to an <code>input</code> field.</p>
+
+            <div class="form-group">
+                <label for="inputPassword">Disabled</label>
+                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+            </div>
+
+            <h3>Disabled Fieldsets</h3>
+            <p>To disable all inputs in a fieldset, add the <code>disabled</code> attribute to the <code>fieldset</code> element.</p>
+
+            <fieldset disabled>
+                <div class="form-group">
+                    <label for="disabledTextInput">Input in a disabled fieldset</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect">Select list in a disabled fieldset</label>
+                    <select id="disabledSelect" class="form-control">
+                        <option>Disabled select list</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <h3>Read-Only Input</h3>
+            <p>To make an input read-only, add the <code>readonly</code> attribute to an <code>input</code> field.</p>
+            <p>What's the difference between disabled and read-only?</p>
+
+            <div class="form-group">
+                <label for="inputPassword">Read-only input</label>
+                <input class="form-control" id="readonlyInput" type="text" placeholder="Disabled input here..." disabled>
+            </div>
+
+            <h3>Validation States</h3>
+            <p>Add the <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> class to the parent <code>.form-group</code> element of an input to use Bootstrap's validation styles for error, warning, and success messages.</p>
+
+            <p>To show feedback icons:</p>
+            <ul>
+                <li>Add the <code>.has-feedback</code> class to the parent <code>.form-group</code> element</li>
+                <li>Add the <code>.form-control-feedback</code> class to an icon <code>&lt;span&gt;</code>in the parent <code>.form-group</code>.</li>
+            </ul>
+
+            <div class="form-group has-success has-feedback">
+                <label for="inputSuccess">Input with success and glyphicon</label>
+                <input type="text" class="form-control" id="inputSuccess">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+            <div class="form-group has-warning has-feedback">
+                <label for="inputWarning">Input with warning and glyphicon</label>
+                <input type="text" class="form-control" id="inputWarning">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+            <div class="form-group has-error has-feedback">
+                <label for="inputError">Input with error and glyphicon</label>
+                <input type="text" class="form-control" id="inputError">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+
+            <h3>Hidden Labels</h3>
+
+            <p>Add the <code>.sr-only</code> class to a label to make it visible only to screen readers.</p>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="address" class="col-sm-2 control-label">Address 1:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address" placeholder="Address 1...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address2" class="col-sm-2 control-label sr-only">Address 2:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address2" placeholder="Address 2...">
+                    </div>
+                </div>
+            </form>
+
+            <div class="page-header">
+                <h2>Sizing Inputs</h2>
+            </div>
+
+            <h3>Input Sizes</h3>
+            <p>To set the size of an input element, add the <code>.input-sm</code> or <code>.input-lg</code> class to an <code>&lt;input&gt;</code> element.</p>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="inputsm">Small Input</label>
+                    <input class="form-control input-sm" id="inputsm" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="inputdefault">Normal Input</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="inputlg">Large Input</label>
+                    <input class="form-control input-lg" id="inputlg" type="text">
+                </div>
+            </form>
+
+            <h3>Input Size on Horizontal Forms</h3>
+            <p>To set the size of form controls and their labels on a horizontal form, add the <code>.form-group-*</code> class to the <code>.form-group</code> element.</p>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label" for="sm">Small Form Group</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" id="sm">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="md">Normal Form Group</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" id="md">
+                    </div>
+                </div>
+                <div class="form-group form-group-lg">
+                    <label class="col-sm-3 control-label" for="lg">Large Form Group</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" id="lg">
+                    </div>
+                </div>
+            </form>
+
+            <h3>Column Sizing</h3>
+            <p>To assign different widths to input elements, add one of the column size classes (<code>.col-xs-*</code>) to the input's parent <code>&lt;div&gt;</code>.</p>
+
+            <div class="form-group col-xs-3">
+                <label for="ex1">col-xs-3</label>
+                <input class="form-control" id="ex1" type="text">
+            </div>
+            <div class="form-group col-xs-4">
+                <label for="ex2">col-xs-4</label>
+                <input class="form-control" id="ex2" type="text">
+            </div>
+            <div class="form-group col-xs-5">
+                <label for="ex3">col-xs-5</label>
+                <input class="form-control" id="ex3" type="text">
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-6">
+
+
+                </div>
+                <div class="col-sm-6">
+
+
+                </div>
+            </div>
+         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+    </body>
+</html>

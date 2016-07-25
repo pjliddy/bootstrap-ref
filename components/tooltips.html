@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Tooltips</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Tooltips</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Tooltips</h2>
+            </div>
+
+            <h3>Basic Tooltip</h3>
+
+            <a href="#" data-toggle="tooltip" title="Tooltip">Tooltip</a>
+
+            <h3>Positioning Tooltips</h3>
+
+            <ul>
+                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip">Top Tooltip</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip">Right Tooltip</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Bottom Tooltip</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip">Left Tooltip</a></li>
+            </ul>
+
+            <div class="page-header">
+                <h2>Bootstrap Tooltip JS</h2>
+            </div>
+
+            <h3>Methods</h3>
+
+            <h3>Events</h3>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+
+        <!-- Initialize tooltips with jQuery -->
+
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </body>
+</html>

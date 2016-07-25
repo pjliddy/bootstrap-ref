@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Alerts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div w3-include-html="/nav.html"></div>
+            <div class="page-header">
+                <h1>Bootstrap Reference - Alerts</h1>
+            </div>
+
+            <div class="page-header">
+                <h2>Basic Alerts</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Alert Class</h3>
+                    <p>Alerts are created with the <code>.alert</code> class, followed by one of the four contextual classes <code>.alert-success</code>, <code>.alert-info</code>, <code>.alert-warning</code> or <code>.alert-danger</code>:</p>
+
+                    <div class="alert alert-success">
+                        <strong>Success!</strong> Indicates a successful or positive action.
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>Info!</strong> Indicates a neutral informative change or action.
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>Warning!</strong> Indicates a warning that might need attention.
+                    </div>
+
+                    <div class="alert alert-danger">
+                        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <h3>Closing Alerts</h3>
+                    <p>To close the alert message, add <code>class="close"</code> and <code>data-dismiss="alert"</code> to a link or a button element:</p>
+                    <p>The <code>.close</code> class styles the close button for the alert message (floats right with a specified font-size, color, etc.)</p>
+                    <p>To help improve accessibility for people using screen readers, include the <code>aria-label="close"</code> attribute, when creating a close button.</p>
+                    <p><code>&amp;times;</code> (×) is an HTML entity that is the preferred icon for close buttons, rather than the letter "x".</p>
+
+                    <div class="alert alert-success">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Close Me!</strong> Clicking on the &times; uses <code>data-dismiss="alert"</code> to close the alert.
+                    </div>
+                </div>
+            </div>
+
+            <h3>Animating Alerts</h3>
+            <p>The <code>.fade</code> and <code>.in</code> classes adds a fading effect when closing the alert message:</p>
+
+            <div class="alert alert-info fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Close Me!</strong> The alert will fade away and close up the layout.
+            </div>
+
+            <div class="alert alert-warning fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Close Me!</strong> The alert will fade away and close up the layout.
+            </div>
+
+            <div class="page-header">
+                <h2>Bootstrap JS Alert</h2>
+            </div>
+
+            <h3>Close Alerts Via JavaScript</h3>
+            <p>Close manually with a JavaScript call to <code>.alert("close")</code>from a link or a button element to close the alert message:</p>
+            <p>The <code>close.bs.alert</code> event is triggered when the alert message is about to be closed.</p>
+            <p>The <code>closed.bs.alert</code> event is triggered when the alert message has been closed.</p>
+
+            <div class="alert alert-danger" id="myAlert">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>Close Me!</strong> Clicking on the &times; uses <code>.alert('close')</code> to close the alert.
+            </div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>w3IncludeHTML();</script>
+
+        <script>
+            $(document).ready(function(){
+                // this code closes the alert when the ".close" element is clicked
+                $(".close").click(function(){
+                    $("#myAlert").alert();
+                });
+                // this code is called when the "close.bs.alert" event occurs
+                $("#myAlert").on('close.bs.alert', function(){
+                    alert('The alert message is closing.');
+                });
+                 // this code is called when the "closed.bs.alert" event occurs
+               $("#myAlert").on('closed.bs.alert', function(){
+                    alert('The alert message is now closed.');
+                });
+            });
+        </script>
+    </body>
+</html>
