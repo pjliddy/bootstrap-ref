@@ -26,12 +26,14 @@
                     <li><a href="#galaxy">Galaxy</a></li>
                     <li><a href="#spacecraft">Spacecraft</a></li>
                     <li><a href="#planets">Planets</a></li>
-                    <li><a href="#choose">Choose</a></li>
+                    <li><a href="#sides">Sides</a></li>
                     <li><a href="#rockets">Rockets</a></li>
+                    <li><a href="#googleMap">Launch</a></li>
                 </ul>
             </div>
         </nav>
 
+<!--
         <div class="jumbotron bg-1 text-center container-fluid" id="explore">
             <h1>Exploring Bootstrap</h1>
             <img src="/img/theme/marsmask.png" class="image-hero img-responsive" alt="Mars">
@@ -47,8 +49,27 @@
             </form>
 
         </div>
+-->
 
-        <div class="page-section bg-2 text-center" id="galaxy">
+        <div class="jumbotron layout-1 colorset-1 text-center container-fluid" id="explore">
+            <div class="bg-image">
+                <img src="/img/theme/marsmask.png" class="image-hero img-responsive" alt="Mars">
+                <h1>Exploring<br>Bootstrap</h1>
+            </div>
+                <p class="lead">It's The Reason Why We're Here</p>
+                <form class="form-inline">
+                    <div class="input-group input-group-lg">
+                        <label for="enrollemail" class="sr-only">Email Address</label>
+                        <span class="input-group-addon">@</span>
+                        <input type="email" class="form-control" id="enrollemail"  placeholder="Sign me up...">
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg">Enroll</button>
+                </form>
+
+        </div>
+
+        <div class="page-section colorset-2  layout-2 text-center" id="galaxy">
             <div class="container slideanim">
                 <h2>A long time ago in a galaxy far, far away...</h2>
                 <p class="text-justify">It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire’s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
@@ -58,7 +79,7 @@
             </div>
         </div>
 
-        <div class="page-section bg-3 text-center" id="spacecraft">
+        <div class="page-section layout-3 colorset-3 text-center" id="spacecraft">
            <div class="container" >
              <h2 class="slideanim">Spacecraft</h2>
 
@@ -103,8 +124,8 @@
            </div>
         </div>
 
-        <div class="container-fluid page-section bg-1 text-center" id="planets">
-            <h2 class="no-bottom">Planets</h2>
+        <div class="container-fluid page-section colorset-1 layout-carousel text-center" id="planets">
+            <h2>Planets</h2>
 
             <div id="carousel1" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -153,25 +174,25 @@
             </div>
         </div>
 
-        <div class="page-section bg-4 text-center" id="choose">
+        <div class="page-section colorset-4 layout-4 text-center" id="sides">
             <div class="container">
                 <h2 class="slideanim">Choose a Side</h2>
 
                 <div class="row gutter-row-2">
                     <div class="col-md-6 content-column-2 slideanim">
-                        <span class="fa fa-empire big-icon"></span>
+                        <span class="fa fa-empire big-icon highlight"></span>
                         <h3>Galactic Empire</h3>
                         <p>The Empire replaced the Galactic Republic in the aftermath of the Clone Wars, giving supreme authority to Palpatine, the Dark Lord of the Sith.</p>
-                        <a href="#" class="btn btn-link btn-lg">
+                        <a href="#" class="btn btn-link btn-lg highlight">
                             <span class="fa fa-empire"></span> Power of the Dark Side
                         </a>
                     </div>
 
                     <div class="col-md-6 content-column-2 slideanim">
-                        <span class="fa fa-rebel big-icon"></span>
+                        <span class="fa fa-rebel big-icon highlight"></span>
                         <h3>Rebel Alliance</h3>
                         <p>The Alliance to Restore the Republic is a direct reaction to the emergence of the Galactic Empire in an effort to restore the ideals of the Old Republic.</p>
-                        <a href="#" class="btn btn-link btn-lg">
+                        <a href="#" class="btn btn-link btn-lg highlight">
                             <span class="fa fa-rebel"></span> May the Force Be With You
                         </a>
                     </div>
@@ -180,7 +201,7 @@
         </div>
 
         <div class="container" id="rockets">
-            <div class="page-section bg-3 text-center ">
+            <div class="page-section colorset-3 layout-3 text-center ">
                 <h2 class="slideanim">Saturn V</h2>
                 <div class="row gutter-row-2 slideanim">
                     <div class="col-md-4 content-column-2">
@@ -205,6 +226,8 @@
              </div>
         </div>
 
+        <div id="googleMap"></div>
+
         <footer class="text-center">
             <a href="#pagebody" title="To Top">
                 <span class="glyphicon glyphicon-chevron-up"></span>
@@ -214,6 +237,30 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            var myCenter = new google.maps.LatLng( 28.6265716,-80.6210916);
+
+            function initialize() {
+            var mapProp = {
+            center:myCenter,
+            zoom:11,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker = new google.maps.Marker({
+            position:myCenter
+            });
+
+            marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
         <script>
             $(document).ready(function(){
                 // Add smooth scrolling to all links in navbar + footer link
