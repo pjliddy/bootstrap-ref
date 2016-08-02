@@ -1,0 +1,9 @@
+/* Layout classes */
+
+.color-swatch {
+    min-height: 96px;
+}
+
+.color-swatch p {
+    text-align: center;
+}
